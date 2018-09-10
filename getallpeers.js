@@ -54,7 +54,7 @@ const getLocation = async (ip, saveip, freegeoserverUrl) =>
 async function getPeerByIp(ip, port) {
   mySet.add(ip);
   try {
-    const res = await axios.get("http://" + ip + ":" + port + "/peers");
+    const res = await axios.get("http://" + ip + ":" + port + "/getpeers");
     if (!res.data.peers) throw new Error("Missing peers.");
     // console.log(`${res.data.peers.length} peers found`);
     return res.data.peers;
@@ -66,7 +66,7 @@ async function getPeerByIp(ip, port) {
 }
 async function getFeeByIp(ip, port) {
   try {
-    const res = await axios.get("http://" + ip + ":" + port + "/feeaddress");
+    const res = await axios.get("http://" + ip + ":" + port + "/feeinfo");
     if (!res.data.fee_address) throw new Error("Missing fee_address.");
     //console.log(`${res.data.fee_address} fee_address found for ${ip}`);
     return ip;
