@@ -1,6 +1,6 @@
-# Karbo nodes map
+# TurtleCoin nodes map
 
-Visualizes KRB nodes and master nodes on the map.
+Visualizes TRTL nodes and master nodes on the map.
 
 
 ## How to run
