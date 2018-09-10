@@ -286,12 +286,12 @@
         onAdd: function (map) {
             var img = L.DomUtil.create('img');
 
-            img.src = karboLogoPaht;
+            img.src = turtleLogoPaht;
             img.style.width = '50px';
             L.DomEvent
                 .addListener(img, 'click', L.DomEvent.stopPropagation)
                 .addListener(img, 'click', L.DomEvent.preventDefault)
-                .addListener(img, 'click', function () { location.href = 'http://karbo.io'; });
+                .addListener(img, 'click', function () { location.href = 'https://turtlecoin.lol'; });
             return img;
         },
 
