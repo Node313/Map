@@ -22,3 +22,9 @@ Open localhost:8081.
 It's caching nodes' ips every 24 hrs into memory 
 
 ![image](https://raw.githubusercontent.com/polar-it/turtle-nodes-map/master/TurtleMap.PNG)
+
+
+
+
+Thanks  Karbovanets/karbo-nodes-map
+Thanks 
