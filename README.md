@@ -1,7 +1,8 @@
 # TurtleCoin nodes map
 
-Visualizes TRTL nodes and master nodes on the map.
+Visualizes TRTL nodes and public nodes on the map.
 
+Every TRTL daemon mixes internally, automatically  using Borromean Ring Signatures, so we have no need for Masternodes
 
 ## How to run
 install and run freegeoip
