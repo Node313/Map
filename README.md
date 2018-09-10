@@ -19,6 +19,8 @@ and run
 interval must more than 3600 
 Open localhost:8081.
 
+Example :  node app.js --startnode=localhost  --port=11898 --interval=12000 --freegeoserverUrl=localhost:8080
+
 It's caching nodes' ips every 24 hrs into memory 
 
 ![image](https://raw.githubusercontent.com/polar-it/turtle-nodes-map/master/TurtleMap.PNG)
