@@ -89,8 +89,8 @@
 
 <script>
 
-var karboLogoPaht = 'img/sm-krb-logo.png';
-var karboMarkerHolePaht = 'img/marker_hole.png';
+var turtleLogoPaht = 'img/sm-turtle-logo.png';
+var turtleMarkerHolePaht = 'img/marker_hole.png';
 
 
 var layerId;
@@ -282,7 +282,7 @@ var mymap = L.map('mapid');
         if(markers.has(name)){
            countrieslayerGroup.removeLayer(markers.get(name));
         } 
-        var myMarker = L.marker(lat,{icon:	new L.NumberedDivIcon({number: count>1000? (count/1000).toFixed(1)+'K' :count+'',iconUrl: karboMarkerHolePaht})})
+        var myMarker = L.marker(lat,{icon:	new L.NumberedDivIcon({number: count>1000? (count/1000).toFixed(1)+'K' :count+'',iconUrl: turtleMarkerHolePaht})})
         myMarker.addTo(countrieslayerGroup);
         markers.set(name,myMarker);
     } 
@@ -291,12 +291,12 @@ var mymap = L.map('mapid');
 		onAdd: function(map) {
 			var img = L.DomUtil.create('img');
 			
-			img.src = karboLogoPaht;
+			img.src = turtleLogoPaht;
 			img.style.width = '50px';
 			L.DomEvent
             .addListener(img, 'click', L.DomEvent.stopPropagation)
             .addListener(img, 'click', L.DomEvent.preventDefault)
-            .addListener(img, 'click', function () { location.href='http://karbo.io'; });
+            .addListener(img, 'click', function () { location.href='http://turtlecoin.lol'; });
 			return img;
 		},
 		
