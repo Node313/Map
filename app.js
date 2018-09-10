@@ -3,7 +3,7 @@ const app = express();
 const locations = require("./getallpeers.js");
 
 const argv = require("yargs")
-  .default("port", 32348)
+  .default("port", 11898)
   .default("freegeoserverUrl", "127.0.0.1:8080")
   .usage("Usage: $0 --startnode=[str] --interval=[num] [[ --port=[num]], --freegeoserverUrl=[str]]")
     .help('h')
